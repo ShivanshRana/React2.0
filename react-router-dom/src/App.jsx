@@ -1,0 +1,25 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import AboutUs from './pages/AboutUs'
+import Contact from './pages/Contact'
+import Navbar from './component/Navbar'
+
+const App = () => {
+
+  return (
+    <div className='routes'>
+     
+      <Navbar/>
+      <Routes>
+         <Route path='/' element={<Home/>} />
+         <Route path='/about' element={<AboutUs/>} />
+         <Route path='/contact' element={<Contact/>} />
+         
+      </Routes>
+      
+    </div>
+  )
+}
+
+export default App
