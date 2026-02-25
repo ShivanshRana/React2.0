@@ -1,0 +1,97 @@
+/* Parent container */
+.parent {
+  width: 100%;          /* fixed width */
+  height: 100%;         /* fixed height */
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+/* Card */
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  padding:20px;
+  margin:30px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Top section */
+.top {
+  position: relative;
+}
+
+.top img {
+  width: 50%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.top button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Center section */
+.center {
+  padding: 15px;
+}
+
+.center h3 {
+  margin: 0;
+  color: #555;
+}
+
+.center h2 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.center p {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Bottom section */
+.bottom {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+
+}
+
+.bottom button {
+  padding: 8px 14px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bottom button:hover {
+  background: #43a047;
+}
